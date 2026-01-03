@@ -145,5 +145,5 @@ Dự án được thực hiện bởi:
 
 ---
 <p align="center">
-  <i>Cảm ơn các bạn đã quan tâm theo dõi! Nếu thấy dự án hữu ích, hãy để lại 1 Star ⭐ nhé!</i>
+  <i>Cảm ơn mọi người đã theo dõi! Nếu thấy dự án hữu ích, hãy để lại 1 Star ⭐ nhé!</i>
 </p>
