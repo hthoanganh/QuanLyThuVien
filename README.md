@@ -77,7 +77,7 @@ Dưới đây là hình ảnh thực tế của phần mềm:
 
 **Bước 1: Clone dự án**
 ```bash
-git clone https://github.com/HoangAnh/QuanLyThuVien_Nhom7.git
+git clone https://github.com/HoangAnh/QuanLyThuVien.git
 ```
 
 **Bước 2: Triển khai Cơ sở dữ liệu (Database Setup)**
