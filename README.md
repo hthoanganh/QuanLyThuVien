@@ -40,9 +40,10 @@ Dự án không chỉ dừng lại ở các chức năng CRUD cơ bản mà còn
 * Áp dụng kỹ thuật `async/await` cho các tác vụ nặng (như Load dữ liệu lớn, Gửi email, Kết nối Database).
 * Tích hợp **Loading Animation** giúp giao diện không bị "đơ" (Not Responding) khi xử lý tác vụ lâu, mang lại trải nghiệm chuyên nghiệp.
 
-### 3. 📊 Báo cáo & Xuất Excel "VIP"
-* Sử dụng thư viện `Interop.Excel` để xuất báo cáo danh sách sách, độc giả, tình hình mượn trả.
-* **Format tự động:** Tự động căn chỉnh độ rộng cột, tô màu tiêu đề, kẻ khung bảng tính và thêm thông tin ngày giờ xuất file ngay trong code C#.
+### 3. 📊 Báo cáo & Xuất Excel (Report)
+* **Nút Report thông minh:** Tích hợp tính năng xuất báo cáo nhanh tại các màn hình Quản lý Sách và Độc giả.
+* **Xuất Excel "VIP":** Sử dụng thư viện `Interop.Excel` để xuất danh sách ra file Excel chuẩn định dạng.
+* **Format tự động:** Code C# tự động căn chỉnh độ rộng cột, tô màu tiêu đề, kẻ khung bảng tính và thêm thông tin ngày giờ xuất file.
 
 ### 4. 📲 Công nghệ Mã QR (QR Code)
 * Tự động tạo mã QR cho từng đầu sách chứa đầy đủ thông tin (Mã, Tên, Tác giả, Vị trí...).
@@ -51,6 +52,12 @@ Dự án không chỉ dừng lại ở các chức năng CRUD cơ bản mà còn
 ### 5. 💾 Sao lưu & Phục hồi Dữ liệu (Backup & Restore)
 * Chức năng dành riêng cho Admin.
 * Cho phép tạo file sao lưu `.bak` của cơ sở dữ liệu và phục hồi lại hệ thống khi có sự cố, thực hiện trực tiếp trên giao diện phần mềm mà không cần mở SQL Server Management Studio.
+
+### 6. 🔎 Tra cứu & Quản lý Nghiệp vụ (Search & CRUD)
+* **Tìm kiếm đa tiêu chí:** * *Sách:* Tìm theo Mã sách, Tên sách, Thể loại, Tác giả...
+    * *Độc giả:* Tìm theo Mã độc giả, Tên, Số điện thoại.
+* **Thêm/Sửa/Xóa (CRUD):** Giao diện nhập liệu được thiết kế tối ưu, tự động kiểm tra (Validate) dữ liệu trống hoặc sai định dạng trước khi lưu vào Database.
+* **Cập nhật realtime:** Danh sách dữ liệu tự động làm mới ngay sau khi thao tác thành công.
 
 ## 📸 Hình ảnh Demo (Screenshots)
 
