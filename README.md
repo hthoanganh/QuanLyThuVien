@@ -54,20 +54,15 @@ Dự án không chỉ dừng lại ở các chức năng CRUD cơ bản mà còn
 
 ## 📸 Hình ảnh Demo (Screenshots)
 
-*(Vui lòng cập nhật hình ảnh thực tế của dự án tại đây)*
+Dưới đây là hình ảnh thực tế của phần mềm:
 
 | Đăng nhập (Login) | Quản lý Kho sách (Book Mgmt) |
 |:---:|:---:|
-| ![Login](<img width="971" height="587" alt="image" src="https://github.com/user-attachments/assets/8af19634-31fc-4ffc-8b25-6a295e4341db" />
-) | ![Books](<img width="897" height="695" alt="image" src="https://github.com/user-attachments/assets/c88a3ba3-053a-477c-98eb-69bea300ab34" />
-) |
+| <img src="https://github.com/user-attachments/assets/8af19634-31fc-4ffc-8b25-6a295e4341db" width="100%" /> | <img src="https://github.com/user-attachments/assets/c88a3ba3-053a-477c-98eb-69bea300ab34" width="100%" /> |
 
-| Tạo mã QR | Xuất Excel |
+| Tạo mã QR | Xuất Excel (Báo cáo) |
 |:---:|:---:|
-| ![QR](<img width="458" height="603" alt="image" src="https://github.com/user-attachments/assets/f785462c-c490-4a16-bf5b-bba5111a7315" />
-) | ![Excel](<img width="907" height="596" alt="image" src="https://github.com/user-attachments/assets/f92c04d3-e1ba-44ef-8d3f-4751676c0804" />; <img width="800" height="1003" alt="image" src="https://github.com/user-attachments/assets/a400153e-b5cb-41c6-bf89-86354c7bc0cf" />
-
-) |
+| <img src="https://github.com/user-attachments/assets/f785462c-c490-4a16-bf5b-bba5111a7315" width="100%" /> | <img src="https://github.com/user-attachments/assets/f92c04d3-e1ba-44ef-8d3f-4751676c0804" width="100%" /> <br> <br> <img src="https://github.com/user-attachments/assets/a400153e-b5cb-41c6-bf89-86354c7bc0cf" width="100%" /> |
 
 ## ⚙️ Hướng dẫn cài đặt (Installation)
 
