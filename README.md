@@ -139,7 +139,7 @@ Hệ thống đã nạp sẵn các tài khoản mẫu để Giảng viên/Ngư�
 
 ## 👨‍💻 Tác giả (Authors)
 
-Dự án được thực hiện bởi **Nhóm 7 - Lớp Lập trình Windows**:
+Dự án được thực hiện bởi **Nhóm 7 - Lớp Lập trình .NET (C#)**:
 
 * ⭐️ **Hoàng Anh** - *Trưởng nhóm (Leader) / Fullstack Dev*
 
