@@ -107,15 +107,15 @@ Dự án đã đính kèm sẵn file Script SQL (`Database_QLTV.sql`) chứa to�
 
 ## 🔐 Tài khoản Demo (Default Credentials)
 
-Hệ thống đã nạp sẵn các tài khoản mẫu để Giảng viên/Người dùng trải nghiệm ngay:
+Hệ thống đã nạp sẵn các tài khoản mẫu tương ứng với dữ liệu thực tế trong Database:
 
 | Quyền hạn (Role) | Tài khoản (User) | Mật khẩu (Pass) | Mô tả quyền |
 | :--- | :--- | :--- | :--- |
-| **Admin (Quản trị)** | `admin` | `123` | **Toàn quyền hệ thống**: Sao lưu/Phục hồi, Quản lý nhân viên, Thống kê doanh thu. |
-| **Thủ thư** | `tt01` | `123` | Quản lý Sách, Độc giả, Thực hiện Mượn - Trả. |
-| **Độc giả** | `dg01` | `123` | Tra cứu sách, Xem lịch sử mượn cá nhân. |
+| **Admin (Quản trị)** | `admin` | `admin` | **Toàn quyền hệ thống**: Sao lưu/Phục hồi, Quản lý nhân viên, Thống kê. |
+| **Nhân viên (Thủ thư)** | `nhanvien` | `123` | Quản lý Sách, Độc giả, Thực hiện Mượn - Trả. |
+| **Độc giả** | `docgia` | `123456` | Tra cứu sách, Xem lịch sử mượn cá nhân. |
 
-> **Lưu ý:** Mật khẩu trong Database đã được mã hóa MD5. Để đổi mật khẩu, vui lòng sử dụng chức năng trong phần mềm để đảm bảo mã hóa đúng chuẩn.
+> **Lưu ý:** Mật khẩu trong Database đã được mã hóa MD5. Để đổi mật khẩu, vui lòng sử dụng chức năng "Đổi mật khẩu" trong phần mềm để đảm bảo mã hóa đúng chuẩn.
 
 ---
 
