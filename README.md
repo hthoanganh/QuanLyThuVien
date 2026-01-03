@@ -6,7 +6,7 @@
 ![IDE](https://img.shields.io/badge/IDE-Visual%20Studio-violet)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-> **Dự án Báo cáo môn Lập trình Windows (WinForms)**
+> **Dự án Báo cáo môn Lập trình .NET (C# - WinForms)**
 >
 > Một giải pháp quản lý thư viện toàn diện, hiện đại, tích hợp các công nghệ xử lý dữ liệu nâng cao và tối ưu hóa trải nghiệm người dùng.
 
@@ -70,69 +70,73 @@ Dưới đây là hình ảnh thực tế của phần mềm:
 
 **Bước 1: Clone dự án**
 ```bash
-git clone [https://github.com/HoangAnh/QuanLyThuVien_Nhom7.git](https://github.com/HoangAnh/QuanLyThuVien_Nhom7.git)
-Bước 2: Triển khai Cơ sở dữ liệu (Database Setup) Dự án đã đính kèm sẵn file Script SQL (Database_QLTV.sql) chứa toàn bộ cấu trúc bảng và dữ liệu mẫu.
+git clone https://github.com/HoangAnh/QuanLyThuVien_Nhom7.git
+```
 
-Mở SQL Server Management Studio (SSMS).
+**Bước 2: Triển khai Cơ sở dữ liệu (Database Setup)**
 
-Chọn File > Open > File... và tìm đến file Database_QLTV.sql trong thư mục dự án vừa tải về.
+Dự án đã đính kèm sẵn file Script SQL (`Database_QLTV.sql`) chứa toàn bộ cấu trúc bảng và dữ liệu mẫu.
+1.  Mở **SQL Server Management Studio (SSMS)**.
+2.  Chọn **File** > **Open** > **File...** và tìm đến file `Database_QLTV.sql` trong thư mục dự án vừa tải về.
+3.  Nhấn nút **Execute** (hoặc phím `F5`) để chạy Script tạo cơ sở dữ liệu `QLTV_Nhom7`.
 
-Nhấn nút Execute (hoặc phím F5) để chạy Script tạo cơ sở dữ liệu QLTV_Nhom7.
+**Bước 3: Cấu hình kết nối (Connection String)**
 
-Bước 3: Cấu hình kết nối (Connection String) Để phần mềm kết nối được với SQL Server trên máy bạn, cần cập nhật file cấu hình:
+Để phần mềm kết nối được với SQL Server trên máy bạn, cần cập nhật file cấu hình:
+1.  Mở dự án trong Visual Studio.
+2.  Mở file `App.config` (nằm trong Solution Explorer).
+3.  Tìm thẻ `<connectionStrings>` và sửa lại mục `Data Source` cho phù hợp:
+    ```xml
+    <add name="QLTV_Connect" connectionString="Data Source=.;Initial Catalog=QLTV_Nhom7;Integrated Security=True" ... />
+    
+    <add name="QLTV_Connect" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=QLTV_Nhom7;Integrated Security=True" ... />
+    ```
 
-Mở dự án trong Visual Studio.
+**Bước 4: Khởi chạy ứng dụng**
+1.  Tại Visual Studio, nhấn menu **Build** > **Rebuild Solution** để nạp các thư viện (DevExpress, QR...).
+2.  Nhấn **Start** (hoặc `F5`) để chạy chương trình.
 
-Mở file App.config (nằm trong Solution Explorer).
+---
 
-Tìm thẻ <connectionStrings> và sửa lại mục Data Source:
+## 🔐 Tài khoản Demo (Default Credentials)
 
-Nếu dùng bản SQL Full: Data Source=.;Initial Catalog=QLTV_Nhom7;...
-
-Nếu dùng bản SQL Express: Data Source=.\SQLEXPRESS;Initial Catalog=QLTV_Nhom7;...
-
-Bước 4: Khởi chạy ứng dụng
-
-Tại Visual Studio, nhấn menu Build > Rebuild Solution để nạp các thư viện (DevExpress, QR...).
-
-Nhấn Start (hoặc F5) để chạy chương trình.
-
-🔐 Tài khoản Demo (Default Credentials)
 Hệ thống đã nạp sẵn các tài khoản mẫu để Giảng viên/Người dùng trải nghiệm ngay:
 
-Quyền hạn (Role)	Tài khoản (User)	Mật khẩu (Pass)	Mô tả quyền
-Admin (Quản trị)	admin	123	Toàn quyền hệ thống: Sao lưu/Phục hồi, Quản lý nhân viên, Thống kê doanh thu.
-Thủ thư	tt01	123	Quản lý Sách, Độc giả, Thực hiện Mượn - Trả.
-Độc giả	dg01	123	Tra cứu sách, Xem lịch sử mượn cá nhân.
+| Quyền hạn (Role) | Tài khoản (User) | Mật khẩu (Pass) | Mô tả quyền |
+| :--- | :--- | :--- | :--- |
+| **Admin (Quản trị)** | `admin` | `123` | **Toàn quyền hệ thống**: Sao lưu/Phục hồi, Quản lý nhân viên, Thống kê doanh thu. |
+| **Thủ thư** | `tt01` | `123` | Quản lý Sách, Độc giả, Thực hiện Mượn - Trả. |
+| **Độc giả** | `dg01` | `123` | Tra cứu sách, Xem lịch sử mượn cá nhân. |
 
-Lưu ý: Mật khẩu trong Database đã được mã hóa MD5. Để đổi mật khẩu, vui lòng sử dụng chức năng trong phần mềm để đảm bảo mã hóa đúng chuẩn.
+> **Lưu ý:** Mật khẩu trong Database đã được mã hóa MD5. Để đổi mật khẩu, vui lòng sử dụng chức năng trong phần mềm để đảm bảo mã hóa đúng chuẩn.
 
-💻 Yêu cầu hệ thống (Prerequisites)
-Hệ điều hành: Windows 10/11 (64-bit).
+---
 
-Công cụ lập trình: Visual Studio 2019 hoặc 2022.
+## 💻 Yêu cầu hệ thống (Prerequisites)
 
-Framework: .NET Framework 4.8.
+* **Hệ điều hành:** Windows 10/11 (64-bit).
+* **Công cụ lập trình:** Visual Studio 2019 hoặc 2022.
+* **Framework:** .NET Framework 4.8.
+* **Cơ sở dữ liệu:** SQL Server 2014 trở lên.
+* **Thư viện:** DevExpress (đã tích hợp trong bin), QRCoder, Excel Interop.
 
-Cơ sở dữ liệu: SQL Server 2014 trở lên.
+---
 
-Thư viện: DevExpress (đã tích hợp trong bin), QRCoder, Excel Interop.
+## ⚠️ Khắc phục sự cố (Troubleshooting)
 
-⚠️ Khắc phục sự cố (Troubleshooting)
-Lỗi kết nối CSDL: Kiểm tra kỹ Data Source trong App.config xem đã đúng tên máy SQL của bạn chưa (Ví dụ: DESKTOP-ABC\SQLEXPRESS).
+* **Lỗi kết nối CSDL:** Kiểm tra kỹ `Data Source` trong `App.config` xem đã đúng tên máy SQL của bạn chưa (Ví dụ: `DESKTOP-ABC\SQLEXPRESS`).
+* **Lỗi khi Backup dữ liệu:** Hãy chạy phần mềm dưới quyền Admin (*Run as Administrator*) để có quyền ghi file vào ổ đĩa hệ thống.
+* **Lỗi giao diện (Designer):** Nếu mở Form bị lỗi trắng xóa, hãy chuột phải vào Project -> **Clean Solution**, sau đó **Rebuild** lại.
 
-Lỗi khi Backup dữ liệu: Hãy chạy phần mềm dưới quyền Admin (Run as Administrator) để có quyền ghi file vào ổ đĩa hệ thống.
+---
 
-Lỗi giao diện (Designer): Nếu mở Form bị lỗi trắng xóa, hãy chuột phải vào Project -> Clean Solution, sau đó Rebuild lại.
+## 👨‍💻 Tác giả (Authors)
 
-👨‍💻 Tác giả (Authors)
-Dự án được thực hiện bởi Nhóm 7 - Lớp Lập trình Windows:
+Dự án được thực hiện bởi **Nhóm 7 - Lớp Lập trình Windows**:
 
-⭐️ Hoàng Anh - Trưởng nhóm (Leader) / Fullstack Dev
+* ⭐️ **Hoàng Anh** - *Trưởng nhóm (Leader) / Fullstack Dev*
 
-👤 [Tên Thành Viên 2] - Thành viên (Member)
-
-👤 [Tên Thành Viên 3] - Thành viên (Member)
-
-
-
+---
+<p align="center">
+  <i>Cảm ơn các bạn đã quan tâm theo dõi! Nếu thấy dự án hữu ích, hãy để lại 1 Star ⭐ nhé!</i>
+</p>
