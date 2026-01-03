@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fe8d97c1ec834e71948a2496b50b4e85" Name="Diagram1" ZoomLevel="57">
+        <EntityTypeShape EntityType="QLTV_Nhom7Model.DocGia" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTV_Nhom7Model.PhieuMuon" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTV_Nhom7Model.Sach" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTV_Nhom7Model.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLTV_Nhom7Model.TaiKhoan" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="QLTV_Nhom7Model.FK__PhieuMuon__MaDoc__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="QLTV_Nhom7Model.FK__PhieuMuon__MaTK__4222D4EF" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="QLTV_Nhom7Model.ChiTietPhieuMuon" Width="1.5" PointX="5.25" PointY="1" />
+        <AssociationConnector Association="QLTV_Nhom7Model.FK__ChiTietPh__MaPhi__47DBAE45" />
+        <AssociationConnector Association="QLTV_Nhom7Model.FK__ChiTietPh__MaSac__48CFD27E" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
