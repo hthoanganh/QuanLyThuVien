@@ -124,7 +124,7 @@ Hệ thống đã nạp sẵn các tài khoản mẫu để Giảng viên/Ngư�
 * **Hệ điều hành:** Windows 10/11 (64-bit).
 * **Công cụ lập trình:** Visual Studio 2019 hoặc 2022.
 * **Framework:** .NET Framework 4.8.
-* **Cơ sở dữ liệu:** SQL Server 2014 trở lên.
+* **Cơ sở dữ liệu:** SQL Server 2022 (Từ 2014 trở lên).
 * **Thư viện:** DevExpress (đã tích hợp trong bin), QRCoder, Excel Interop.
 
 ---
